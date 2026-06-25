@@ -2,7 +2,7 @@ $ErrorActionPreference = "Stop"
 
 $ProjectDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $Timestamp = Get-Date -Format "yyyyMMdd-HHmm"
-$TempDir = Join-Path $env:TEMP "market-news-bot-condivisione-$Timestamp"
+$TempDir = Join-Path "/tmp" "market-news-bot-condivisione-$timestamp"
 $Desktop = [Environment]::GetFolderPath("Desktop")
 $ZipPath = Join-Path $Desktop "market-news-bot-condivisione-$Timestamp.zip"
 
